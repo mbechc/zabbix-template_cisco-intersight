@@ -12,10 +12,10 @@ wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Li
 
 
 
-
-
-
-
+  
+  
+  
+  
 ## Continue after you completed the Getting Started Guide
 
 <u>It is Zabbix that executes isctl when communicating with Intersight API so extra steps are required;</u>
