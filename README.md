@@ -27,7 +27,7 @@ This template relies on External checks that executes [isctl](https://isctl.netl
 
 ## What to do
 
-- Install and configure isctl - This page help you set up isctl to satisfy Zabbix
+- Install and configure isctl - [Go to this page to get help on setting up isctl to satisfy Zabbix](https://github.com/mbechc/zabbix-template_cisco-intersight/blob/main/INSTALL_isctl.md)
 - Create a dummy host, and link template "Cisco Intersight" to dummy host
 - Dummy host interface can be of type "Agent interface" with ipaddress 127.0.0.1 port 0
 - To speed up Autodiscover processes, execute the items on dummy host
