@@ -11,7 +11,7 @@ I fetched the file for Linux on the releases page - https://github.com/cgascoig/
 wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Linux_x86_64.tar.gz
 
 
-## Continue after you completed the Getting Started Guide
+## Continue here - after you completed the Getting Started Guide !!!
 
 <u>It is Zabbix that executes isctl when communicating with Intersight API so extra steps are required;</u>
 
