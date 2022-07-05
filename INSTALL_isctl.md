@@ -11,11 +11,6 @@ I fetched the file for Linux on the releases page - https://github.com/cgascoig/
 wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Linux_x86_64.tar.gz
 
 
-
-  
-  
-  
-  
 ## Continue after you completed the Getting Started Guide
 
 <u>It is Zabbix that executes isctl when communicating with Intersight API so extra steps are required;</u>
@@ -33,7 +28,7 @@ wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Li
 
 
 
-**<u>Replay of my fresh isctl install and configure on Zabbix server:</u>**
+##**<u>Replay of my fresh isctl install and configure on Zabbix server:</u>**
 
 wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Linux_x86_64.tar.gz
 
@@ -55,7 +50,7 @@ chown --recursive zabbix:zabbix /var/lib/zabbix
 
 
 
-**<u>My copy of .isctl.yaml looks like this:</u>**
+##**<u>My copy of .isctl.yaml looks like this:</u>**
 
 root@zabbix:~# cat /var/lib/zabbix/.isctl.yaml
 keyfile: ~/secret.key
@@ -65,7 +60,7 @@ server: intersight.com
 
 
 
-**<u>Content of my Zabbix User HomeDir:</u>**
+##**<u>Content of my Zabbix User HomeDir:</u>**
 
 root@zabbix:~# ls -la /var/lib/zabbix/
 drwxr-xr-x  2 root root 4096 Jun 27 14:43 .
@@ -75,7 +70,7 @@ drwxr-xr-x 30 root root 4096 Jun 27 14:30 ..
 
 
 
-**<u>Now cd to /var/lib/zabbix, run a test command and if it outputs JSON - Zabbix template will work</u>**
+##**<u>Now cd to /var/lib/zabbix, run a test command and if it outputs JSON - Zabbix template will work</u>**
 
 root@zabbix:/var/lib/zabbix# **isctl get compute blade**
 [
