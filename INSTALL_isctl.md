@@ -51,13 +51,13 @@ chown --recursive zabbix:zabbix /var/lib/zabbix
 
 
 ## My copy of .isctl.yaml looks like this:
-
+```
 root@zabbix:~# cat /var/lib/zabbix/.isctl.yaml
 keyfile: ~/secret.key
 keyid: 5992d7bc3e9520000163a857/5f31221b7564612d33337ea7/62b57e0d7564612d33867bd5
 output: json
 server: intersight.com
-
+```
 
 
 ## Content of my Zabbix User HomeDir:  
