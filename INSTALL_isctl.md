@@ -61,13 +61,13 @@ server: intersight.com
 
 
 ## Content of my Zabbix User HomeDir:  
-
+```
 root@zabbix:~# ls -la /var/lib/zabbix/
 drwxr-xr-x  2 root root 4096 Jun 27 14:43 .
 drwxr-xr-x 30 root root 4096 Jun 27 14:30 ..
 -rw-r--r--  1 root root  144 Jun 27 14:43 .isctl.yaml
 -rw-r--r--  1 root root 1679 Jun 27 14:43 secret.key
-
+```
 
 
 ## Now cd to /var/lib/zabbix, run a test command and if it outputs JSON - Zabbix template will work  
