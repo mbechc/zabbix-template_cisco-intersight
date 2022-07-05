@@ -1,4 +1,4 @@
-# Cisco Intersight
+# Zabbix Template for Cisco Intersight
 
 ## Overview
 
