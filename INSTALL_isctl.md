@@ -29,7 +29,7 @@ wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Li
 
 
 ## Replay of my fresh isctl install and configure on Zabbix server:
-
+```
 wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Linux_x86_64.tar.gz
 
 tar zxvf isctl_0.1.15_Linux_x86_64.tar.gz
@@ -47,7 +47,7 @@ vi .isctl.yaml (modified output from default to json)
 cp .isctl.yaml /var/lib/zabbix
 
 chown --recursive zabbix:zabbix /var/lib/zabbix
-
+```
 
 
 ## My copy of .isctl.yaml looks like this:
