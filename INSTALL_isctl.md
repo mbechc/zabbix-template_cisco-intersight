@@ -15,8 +15,8 @@ wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Li
 
 <u>It is Zabbix that executes isctl when communicating with Intersight API so extra steps are required;</u>
 
-* **Copy isctl binary to a place like:** /usr/local/bin
-* **Make isctl world executable:** chmod 755 /usr/local/bin/isctl
+* **Copy isctl binary to Zabbix ExternalScripts library (Validate location in /etc/zabbix/zabbix_server.conf):** cp /usr/local/bin/isctl /usr/lib/zabbix/externalscripts/isctl
+* **Make isctl world executable:** chmod 755 /usr/lib/zabbix/externalscripts/isctl
 * When you ran "isctl configure" as part of the getting started guide, it produced a hidden settingsfiles in your HomeDir
 * **Create a HomeDir for Zabbix user, find the HomeDir with command:** cat /etc/passwd | grep zabbix
 * In my case (Debian) the HomeDir is /var/lib/zabbix - but it didn't exist
@@ -34,15 +34,15 @@ wget https://github.com/cgascoig/isctl/releases/download/v0.1.15/isctl_0.1.15_Li
 
 tar zxvf isctl_0.1.15_Linux_x86_64.tar.gz
 
-cp isctl /usr/local/bin
+cp isctl /usr/lib/zabbix/externalscripts/isctl
 
-chmod 755 /usr/local/bin/isctl
+chmod 755 /usr/lib/zabbix/externalscripts/isctl
 
 mkdir /var/lib/zabbix
 
 isctl configure
 
-vi .isctl.yaml (modified output from default to json)
+Edit .isctl.yaml (modified output from default to json AND added ~/ in front of secret.key)
 
 cp .isctl.yaml /var/lib/zabbix
 
@@ -113,5 +113,4 @@ root@zabbix:/var/lib/zabbix# **isctl get compute blade**```
         "link": "https://www.intersight.com/api/v1/bios/Units/5a6013c57439363364eadff5"
       }
     ],``` ..............   this is longer than Star Wars intro
-
 
